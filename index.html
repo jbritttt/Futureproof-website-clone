@@ -19,21 +19,64 @@
 
     <header>
         <div class="top_header">
-            <img class='logo' src="images/61ae20546227c5e415a6a063_Logo-white.svg" alt="">
 
-            <nav>
-                <ul>
+            <div class="z-index-wrapper">
+
+                <img class='logo' src="images/61ae20546227c5e415a6a063_Logo-white.svg" alt="">
+
+
+                <nav class='nav_desktop'>
+
+
+                    <ul>
+
+                        <li><a href="">About</a></li>
+                        <li><a href="">Case Studies</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Careers</a></li>
+
+                    </ul>
+
+
+
+                </nav>
+
+
+
+
+
+                <div class="hire_apply_wrapper">
+
+                    <a class='hire_text' href="">Hire <i class="fas fa-chevron-right"></i></a>
+                    <a class='apply_text' href="">Apply <i class="fas fa-chevron-right"></i></a>
+
+
+                </div>
+
+
+                <div class='hamburger' onclick='openMenu()'>
+
+                    <div class='bar-1'></div>
+                    <div class='bar-1'></div>
+
+
+                </div>
+            </div>
+            <nav class='nav_mobile'>
+
+
+                <ul class='mobile-block'>
 
                     <li><a href="">About</a></li>
                     <li><a href="">Case Studies</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">FAQ</a></li>
                     <li><a href="">Careers</a></li>
-
-
-
-
-
+                    <li class='hire_text_pink'><a class='hire_text' href="">Hire <i
+                                class="fas fa-chevron-right"></i></a></li>
+                    <li class='hire_text_yellow'> <a class='apply_text' href="">Apply <i
+                                class="fas fa-chevron-right"></i></a></li>
                 </ul>
 
 
@@ -41,24 +84,12 @@
             </nav>
 
 
-            <div class="hire_apply_wrapper">
-
-                <a class='hire_text' href="">Hire <i class="fas fa-chevron-right"></i></a>
-                <a class='apply_text' href="">Apply <i class="fas fa-chevron-right"></i></a>
-
-
-            </div>
-
-
-            <div class='hamburger' onclick='openModal(navmb)'>
-
-                <div class='bar-1'></div>
-                <div class='bar-1'></div>
-
-
-            </div>
 
         </div>
+
+
+
+
 
         <div class="hero_wrapper">
             <div class='hero_heading '>
@@ -284,7 +315,22 @@
 
 
 
+    <script>
 
+        function openMenu() {
+
+            let dropDown = document.querySelector('.nav_mobile')
+
+            dropDown.style.top = '0px'
+
+
+
+        }
+
+
+
+
+    </script>
 </body>
 
 
