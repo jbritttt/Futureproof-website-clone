@@ -56,7 +56,7 @@ display:none
   background-color:#3c2157 ;
   padding-left:15px;
   padding-right:15px;
-  position: fixed;
+  
   z-index:999;
   
   
@@ -194,6 +194,9 @@ margin:8px;
 
 
 }
+
+
+
 
 
 .hero_heading{display: grid;
@@ -1014,7 +1017,12 @@ text-decoration: underline;
      
       }
           
-    
+      .hero_wrapper .hero-animate-wrapper .hero_img{
+        margin-top:90px;
+
+
+
+      }
           
     
             .hero_heading {
@@ -1121,6 +1129,8 @@ padding:10%
 
 
 }
+
+
 
 
 
