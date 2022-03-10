@@ -11,7 +11,7 @@ body {
   }
 
 
-  nav,.hire_apply_wrapper {
+  .nav_desktop,.hire_apply_wrapper {
 display:none
 
 
@@ -39,7 +39,7 @@ display:none
   header {display:flex;
   flex-wrap:wrap;
   justify-content: center;
-  
+  width:100%;
   background-color:#3c2157 ;
   overflow:hidden;
   
@@ -48,6 +48,7 @@ display:none
 .top_header{
   display:flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin:auto;
   width:85%;
@@ -55,12 +56,117 @@ display:none
   background-color:#3c2157 ;
   padding-left:15px;
   padding-right:15px;
-  z-index:20
+  position: fixed;
+  z-index:999;
+  
   
 }
 
 
-.top_header .logo {height:42px}
+.top_header .logo {height:42px;
+  
+
+}
+
+/***has a greater Z-index than (.nav-mobile)hides dropdown menu when its sliding down***/
+.z-index-wrapper{
+display:flex;
+justify-content: space-between;
+  
+  align-items: center;
+  background-color:#3c2157 ;
+width:100%;
+height:72px;
+  z-index:50;
+  
+  
+
+
+}
+
+
+
+.nav_mobile {
+ 
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  
+  width:100%;
+  position:relative;
+  top:-420px;
+  
+  transition:.3s ease-in;
+  
+ 
+ 
+  
+  margin:auto;
+  
+  
+}
+
+
+
+
+.nav_mobile ul {
+ 
+  width:100%;
+  background-color:#3c2157 ;
+  
+  
+}
+
+
+.nav_mobile ul li a{
+  
+ color:#fff;
+ 
+ 
+  
+
+
+
+}
+
+
+.nav_mobile ul li{
+  display:block;
+  
+ padding:20px;
+  font-weight:bold;
+  
+font-size:16px;
+z-index:-1;
+
+
+}
+
+.nav_mobile ul .hire_text_pink{
+
+background-color: #ff7899;
+color:#3c2157
+}
+
+.nav_mobile ul .hire_text_yellow{
+
+  background-color: #ffbb36;
+  color:#3c2157
+  }
+
+  .nav_mobile ul .hire_text_pink a{
+
+    background-color: #ff7899;
+    color:#3c2157
+    }
+    
+    .nav_mobile ul .hire_text_yellow a{
+    
+      background-color: #ffbb36;
+      color:#3c2157
+      }
+
+ 
 
 .hamburger{
   
@@ -75,6 +181,8 @@ display:none
 
 
 }
+
+
 
 .hamburger .bar-1 {
 display: block;
@@ -811,7 +919,16 @@ width:100%;
 
 @media screen and (min-width:990px){
 
-  nav {display:flex}
+  .nav_mobile{
+    display:none
+
+
+  }
+
+
+  .nav_desktop {display:flex;
+    
+  }
 
 
   .hire_apply_wrapper{
@@ -865,7 +982,7 @@ font-size: 16px;
 
 
 
-nav ul li a   {
+.nav_desktop ul li a   {
 font-weight:700;
 font-size:16px;
 color:#fff;
@@ -876,7 +993,7 @@ width:100%;
 
 }
 
-nav ul li a:hover{
+.nav_desktop ul li a:hover{
 
 text-decoration: underline;
 
@@ -1004,6 +1121,9 @@ padding:10%
 
 
 }
+
+
+
 
 
 
